@@ -1,7 +1,7 @@
 # Redmi Note 2 -  LineageOS 13
 ==============
 
-This branch is device for building of the LineageOS 13
+This branch is vendor for building LineageOS 13
 ---
 
 ## Specifications
@@ -9,7 +9,7 @@ This branch is device for building of the LineageOS 13
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core 2.0-2.2 GHz Cortex-A53
+CPU     | Octa-core 2.0-2.2 GHz Cortex-A53
 Chipset | Mediatek MT6795 Helio X10
 GPU     | PowerVR G6200
 Memory  | 2-3GB 
@@ -24,26 +24,23 @@ Camera  | Primary: 13 MP, Secondary: 5 MP
 # Build Information
 
 ## Working
- * Adjustable brightness
- * All sensors
+ * Brightness
+ * Sensors
  * Audio
  * Auto brightness
  * Bluetooth
- * Camera rear/front
- * Flashlight (statusbar and camera)
+ * Camera
+ * Flashlight
  * GPS
  * Hardware acceleration
- * MTP and Mass Storage modes
- * RAM and ROM
+ * MTP
  * RIL
  * Rotation
- * Screenrecorder
  * USB OTG
  * Vibration
  * Video playback
  * Wi-Fi
- * IR
-
+ 
 ## Broken/Bugs
  * Magnetometer
  * Fast charging
