@@ -43,7 +43,6 @@ Camera  | Primary: 13 MP, Secondary: 5 MP
  
 ## Broken/Bugs
  * Magnetometer
- * Fast charging
  * IR
  * Bad audio quality
  
