@@ -1,4 +1,4 @@
-$(call inherit-product, device/xiaomi/hermes/full_hermes.mk)
+$(call inherit-product, device/xiaomi/hermes/device.mk)
 
 # Inherit some common LOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
