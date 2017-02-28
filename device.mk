@@ -78,7 +78,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp \
     ro.mount.fs=EXT4 \
     camera.disable_zsl_mode=1 \
-    persist.sys.timezone=Europe/Moscow
+    persist.sys.timezone=Europe/Warsaw
 
 # PRODUCT_PROPERTY_OVERRIDES
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -110,12 +110,6 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf \
     wpa_supplicant \
     wpa_supplicant.conf 
-
-# Media	
-PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
 # ANT Permissions
 PRODUCT_COPY_FILES += \
@@ -159,8 +153,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/meta_init.project.rc:root/meta_init.project.rc \
     $(LOCAL_PATH)/ramdisk/meta_init.rc:root/meta_init.rc \
     $(LOCAL_PATH)/ramdisk/ueventd.mt6795.rc:root/ueventd.mt6795.rc \
-    $(LOCAL_PATH)/ramdisk/init.volte.rc:root/init.volte.rc \
-    $(LOCAL_PATH)/ramdisk/init.mal.rc:root/init.mal.rc \
     $(LOCAL_PATH)/ramdisk/init.ssd.rc:root/init.ssd.rc \
     $(LOCAL_PATH)/ramdisk/init.performance.rc:root/init.performance.rc \
 ##############################################################################################################################################################################################################
@@ -198,23 +190,15 @@ PRODUCT_COPY_FILES += \
 ##############################################################################################################################################################################################################
 # Codec
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/codec/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml \
-    $(LOCAL_PATH)/configs/codec/media_codecs_mediatek_audio.xml:system/etc/media_codecs_mediatek_audio.xml \
-    $(LOCAL_PATH)/configs/codec/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml \
-    $(LOCAL_PATH)/configs/codec/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/configs/codec/media_codecs.xml:system/etc/media_codecs.xml \
-    $(LOCAL_PATH)/configs/codec/media_codecs.xml:system/etc/permissions/media_codecs.xml
+
+    $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/permissions/media_codecs.xml
 
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:system/etc/audio_device.xml \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:system/etc/audio_effects.conf \
-    $(LOCAL_PATH)/configs/audio/audio_em.xml:system/etc/audio_em.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
-
-# Audio_param   
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio_param/AudioParamOptions.xml:system/etc/audio_param/AudioParamOptions.xml
 
 # Audio_param 
 PRODUCT_COPY_FILES += \
@@ -274,8 +258,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/custom.conf:system/etc/custom.conf \
     $(LOCAL_PATH)/configs/mtklog-config.prop:system/etc/mtklog-config.prop \
     $(LOCAL_PATH)/configs/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
-    $(LOCAL_PATH)/configs/perfservboosttbl.txt:system/etc/perfservboosttbl.txt \
-    $(LOCAL_PATH)/configs/perfservscntbl.txt:system/etc/perfservscntbl.txt
 
 # GPS
 PRODUCT_COPY_FILES += \

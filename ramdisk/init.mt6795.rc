@@ -5,8 +5,6 @@ import /FWUpgradeInit.rc
 import init.xlog.rc
 import init.aee.rc
 import init.fon.rc
-import init.volte.rc
-import init.mal.rc
 import init.trustonic.rc
 import init.common_svc.rc
 import init.ssd.rc
@@ -1036,15 +1034,6 @@ service PPLAgent /system/bin/ppl_agent
     class main
     user system
     group system cache
-
-service vtservice /system/bin/vtservice
-    class main
-    socket soc_vt_tcv dgram 660 radio system
-    socket soc_vt_stk dgram 660 radio system
-    socket soc_vt_svc dgram 660 radio system
-    user system
-    group system camera graphics inet net_admin net_raw media sdcard_rw radio sdcard_r media_rw
-    ioprio rt 4
 
 service cmmb /system/bin/cmmbsp
     class main

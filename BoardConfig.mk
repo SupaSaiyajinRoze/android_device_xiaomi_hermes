@@ -19,14 +19,6 @@ TARGET_NO_FACTORYIMAGE := true
 TARGET_BOARD_PLATFORM ?= mt6795
 
 # CPU
-ifeq ($(FORCE_32_BIT),true)
-TARGET_ARCH := arm
-TARGET_CPU_VARIANT := cortex-a7
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_SMP := true
-TARGET_ARCH_VARIANT := armv7-a-neon
-else
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
@@ -39,7 +31,6 @@ TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
-endif
 
 # FIX Freezing
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
@@ -80,7 +71,7 @@ BOARD_MKBOOTIMG_ARGS := \
 	--ramdisk_offset 0x03f88000 \
 	--second_offset 0x00e88000 \
 	--tags_offset 0x0df88000 \
-	--board Bule
+	--board Dinolek
 
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 

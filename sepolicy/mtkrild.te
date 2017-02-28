@@ -91,8 +91,4 @@ allow mtkrild mmcblk0_block_device:blk_file { read write open };
 allow mtkrild qemu_pipe_device:chr_file rw_file_perms;
 allow mtkrild socket_device:sock_file write;
 
-# For MAL MFI
-allow mtkrild mtkmal:unix_stream_socket connectto;
-allow mtkrild mal_mfi_socket:sock_file write;
-
 
