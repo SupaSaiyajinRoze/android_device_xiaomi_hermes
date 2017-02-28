@@ -46,6 +46,7 @@ Camera  | Primary: 13 MP, Secondary: 5 MP
  * Magnetometer(no kernel drivers)
  * IR(no kernel drivers)
  * Bad audio quality(rom or kernel related)
+ * YouTube 60fps videos
  
 # Thanks to:
  
