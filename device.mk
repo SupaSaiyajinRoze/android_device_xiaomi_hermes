@@ -191,9 +191,8 @@ PRODUCT_COPY_FILES += \
 # Codec
 PRODUCT_COPY_FILES += \
 
-    $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/permissions/media_codecs.xml
-
+    $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml
+    
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:system/etc/audio_device.xml \
