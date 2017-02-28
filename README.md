@@ -42,9 +42,10 @@ Camera  | Primary: 13 MP, Secondary: 5 MP
  * Wi-Fi
  
 ## Broken/Bugs
- * Magnetometer
- * IR
- * Bad audio quality
+ * HDR(froze)
+ * Magnetometer(no kernel drivers)
+ * IR(no kernel drivers)
+ * Bad audio quality(rom or kernel related)
  
 # Thanks to:
  
