@@ -244,9 +244,6 @@
 /dev/socket/rild-via u:object_r:rild_via_socket:s0
 /dev/socket/rild-atci-c2k(/.*)? u:object_r:rild_atci_c2k_socket:s0
 /dev/socket/rpc u:object_r:rpc_socket:s0
-/dev/socket/soc_vt_stk(/.*)? u:object_r:soc_vt_stk_socket:s0
-/dev/socket/soc_vt_svc(/.*)? u:object_r:soc_vt_svc_socket:s0
-/dev/socket/soc_vt_tcv(/.*)? u:object_r:soc_vt_tcv_socket:s0
 /dev/socket/statusd u:object_r:statusd_socket:s0
 /dev/socket/sysctl(/.*)? u:object_r:sysctl_socket:s0
 /dev/socket/vold(/.*)? u:object_r:vold_socket:s0
