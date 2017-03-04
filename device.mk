@@ -86,7 +86,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=MediaTekRIL \
     ro.telephony.ril.config=fakeiccid  \
     persist.call_recording.enabled=true \
-    persist.call_recording.src=1 
+    persist.call_recording.src=1
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -109,7 +109,7 @@ PRODUCT_PACKAGES += \
     hostapd_cli \
     dhcpcd.conf \
     wpa_supplicant \
-    wpa_supplicant.conf 
+    wpa_supplicant.conf
 
 # ANT Permissions
 PRODUCT_COPY_FILES += \
@@ -126,7 +126,7 @@ PRODUCT_PACKAGES += \
     setup_fs \
     ext4_resize \
     resize_ext4 \
-    superumount 
+    superumount
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -135,8 +135,7 @@ ifneq ($(TARGET_BUILD_VARIANT),user,userdebug,eng)
   ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
   ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 endif
-##############################################################################################################################################################################################################
-# Ramdisk hermes
+# Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/enableswap.sh:root/enableswap.sh \
     $(LOCAL_PATH)/ramdisk/factory_init.project.rc:root/factory_init.project.rc \
@@ -154,8 +153,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/meta_init.rc:root/meta_init.rc \
     $(LOCAL_PATH)/ramdisk/ueventd.mt6795.rc:root/ueventd.mt6795.rc \
     $(LOCAL_PATH)/ramdisk/init.ssd.rc:root/init.ssd.rc \
-    $(LOCAL_PATH)/ramdisk/init.performance.rc:root/init.performance.rc \
-##############################################################################################################################################################################################################
+    $(LOCAL_PATH)/ramdisk/init.performance.rc:root/init.performance.rc
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
@@ -187,19 +186,18 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
-##############################################################################################################################################################################################################
+
 # Codec
 PRODUCT_COPY_FILES += \
-
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     $(LOCAL_PATH)/configs/codec/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml \
     $(LOCAL_PATH)/configs/codec/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     $(LOCAL_PATH)/configs/codec/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
     $(LOCAL_PATH)/configs/codec/media_codecs_mediatek_audio.xml:system/etc/media_codecs_mediatek_audio.xml \
     $(LOCAL_PATH)/configs/codec/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml \
     $(LOCAL_PATH)/configs/codec/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/configs/codec/media_codecs.xml:system/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/codec/media_codecs.xml:system/etc/media_codecs.xml
     $(LOCAL_PATH)/configs/codec/media_codecs.xml:system/etc/permissions/media_codecs.xml
 
 # Audio
@@ -208,7 +206,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.conf:system/etc/audio_effects.conf \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf
 
-# Audio_param 
+# Audio_param
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
     $(LOCAL_PATH)/configs/permissions/android.hardware.microphone.xml:system/etc/permissions/android.hardware.microphone.xml \
@@ -220,7 +218,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
-# Bluetooth                          
+# Bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/bluetooth/auto_pair_blacklist.conf:system/etc/bluetooth/auto_pair_blacklist.conf \
     $(LOCAL_PATH)/configs/bluetooth/auto_pair_devlist.conf:system/etc/bluetooth/auto_pair_devlist.conf \
@@ -254,7 +252,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks \
     $(LOCAL_PATH)/configs/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
-    $(LOCAL_PATH)/configs/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured
+    $(LOCAL_PATH)/configs/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured 
 
 # Radvd
 PRODUCT_COPY_FILES += \
@@ -265,7 +263,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/clatd.conf:system/etc/clatd.conf \
     $(LOCAL_PATH)/configs/custom.conf:system/etc/custom.conf \
     $(LOCAL_PATH)/configs/mtklog-config.prop:system/etc/mtklog-config.prop \
-    $(LOCAL_PATH)/configs/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg \
+    $(LOCAL_PATH)/configs/mtk_omx_core.cfg:system/etc/mtk_omx_core.cfg
 
 # GPS
 PRODUCT_COPY_FILES += \
