@@ -197,7 +197,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/codec/media_codecs_mediatek_audio.xml:system/etc/media_codecs_mediatek_audio.xml \
     $(LOCAL_PATH)/configs/codec/media_codecs_mediatek_video.xml:system/etc/media_codecs_mediatek_video.xml \
     $(LOCAL_PATH)/configs/codec/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/configs/codec/media_codecs.xml:system/etc/media_codecs.xml
+    $(LOCAL_PATH)/configs/codec/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/codec/media_codecs.xml:system/etc/permissions/media_codecs.xml
 
 # Audio
@@ -252,7 +252,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks \
     $(LOCAL_PATH)/configs/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
-    $(LOCAL_PATH)/configs/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured 
+    $(LOCAL_PATH)/configs/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured
 
 # Radvd
 PRODUCT_COPY_FILES += \
