@@ -73,7 +73,10 @@ BOARD_MKBOOTIMG_ARGS := \
 	--tags_offset 0x0df88000 \
 	--board Dinolek
 
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
+TARGET_KERNEL_SOURCE := kernel/xiaomi/hermes
+TARGET_KERNEL_CONFIG := hermes_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # build old-style zip files (required for ota updater)
 BLOCK_BASED_OTA := false
