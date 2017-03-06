@@ -48,6 +48,11 @@ Camera  | Primary: 13 MP, Secondary: 5 MP
  * Bad audio quality(rom or kernel related)
  * YouTube 60fps videos
  
+# Other repos
+[Vendor](https://github.com/HermesRepos/android_vendor_xiaomi_hermes/tree/cm-13.0)
+
+[Kernel](https://github.com/HermesRepos/android_kernel_xiaomi_hermes/tree/cm-13.0)
+ 
 # Thanks to:
  
  * nofearnohappy
