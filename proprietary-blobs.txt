@@ -122,9 +122,6 @@ bin/wmt_loader
 bin/xlog
 etc/firmware/A4_15_2.2_AA.fw
 etc/firmware/A4_15_2.2_AA.raw
-etc/firmware/WIFI_RAM_CODE_MT6630
-etc/firmware/WMT.cfg
-etc/firmware/WMT_SOC.cfg
 etc/firmware/catcher_filter_1_ltg_n.bin
 etc/firmware/catcher_filter_1_lwg_n.bin
 etc/firmware/dsp_1_ltg_n.bin
@@ -158,10 +155,13 @@ etc/firmware/mt6630_patch_e1_hdr.bin
 etc/firmware/mt6630_patch_e2_hdr.bin
 etc/firmware/mt6630_patch_e3_0_hdr.bin
 etc/firmware/mt6630_patch_e3_1_hdr.bin
-etc/mddb/BPLGUInfoCustomAppSrcP_MT6795_S00_MOLY_LR9_W1423_MD_LWTG_MP_V24_P37_1_ltg_n
-etc/mddb/BPLGUInfoCustomAppSrcP_MT6795_S00_MOLY_LR9_W1423_MD_LWTG_MP_V24_P37_1_lwg_n
-etc/mddb/DbgInfo_LR9.W1423.MD.LWTG.MP_LCSH6795_LWT_L_MOLY_LR9_W1423_MD_LWTG_MP_V24_P37_2015_10_15_21_51_1_ltg_n
-etc/mddb/DbgInfo_LR9.W1423.MD.LWTG.MP_LCSH6795_LWT_L_MOLY_LR9_W1423_MD_LWTG_MP_V24_P37_2015_10_15_21_53_1_lwg_n
+etc/firmware/WIFI_RAM_CODE_MT6630
+etc/firmware/WMT.cfg
+etc/firmware/WMT_SOC.cfg
+etc/mddb/BPLGUInfoCustomAppSrcP_MT6795_S00_MOLY_LR9_W1423_MD_LWTG_MP_V24_P58_1_ltg_n
+etc/mddb/BPLGUInfoCustomAppSrcP_MT6795_S00_MOLY_LR9_W1423_MD_LWTG_MP_V24_P58_1_lwg_n
+etc/mddb/DbgInfo_LR9.W1423.MD.LWTG.MP_LCSH6795_LWT_L_MOLY_LR9_W1423_MD_LWTG_MP_V24_P58_2017_01_11_14_17_1_ltg_n
+etc/mddb/DbgInfo_LR9.W1423.MD.LWTG.MP_LCSH6795_LWT_L_MOLY_LR9_W1423_MD_LWTG_MP_V24_P58_2017_01_11_14_21_1_lwg_n
 lib/drm/libdrmmtkplugin.so
 lib/egl/egl.cfg
 lib/egl/libGLES_android.so
@@ -448,7 +448,6 @@ lib64/hw/camera.default.so
 lib64/hw/bluetooth.default.so
 lib64/drm/libdrmctaplugin.so
 lib64/drm/libdrmmtkplugin.so
-###################22.11_START####################################################
 lib64/libaudioflinger.so
 lib64/libaudiomtkdcremoval.so
 lib64/libaudioresampler.so
@@ -493,7 +492,6 @@ lib64/libvoicerecognition_jni.so
 lib64/libvp8dec_sa.ca7.so
 lib64/libvp8enc_sa.ca7.so
 lib64/libvp9dec_sa.ca7.so
-###################22.11_END####################################################
 lib64/libantradio.so
 lib64/libbluetooth_mtk_pure.so
 lib64/libBnMtkCodec.so
@@ -734,4 +732,3 @@ vendor/lib64/libusc.so
 vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
 xbin/BGW
 xbin/mnld
-
