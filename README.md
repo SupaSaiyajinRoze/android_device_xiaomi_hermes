@@ -24,40 +24,43 @@ Camera  | Primary: 13 MP, Secondary: 5 MP
 # Build Information
 
 ## Working
- * Brightness
- * Sensors
- * Audio
- * Auto brightness
- * Bluetooth
- * Camera
- * Flashlight
- * GPS
- * Hardware acceleration
- * MTP
- * RIL
- * Rotation
- * USB OTG
- * Vibration
- * Video playback
- * Wi-Fi
+
+	* Brightness
+	* Sensors
+	* Audio
+	* Auto brightness
+	* Bluetooth
+	* Camera
+	* Flashlight
+	* GPS
+	* Hardware acceleration
+	* MTP
+	* RIL
+	* Rotation
+	* USB OTG
+	* Vibration
+	* Video playback
+	* Wi-Fi
  
 ## Broken/Bugs
- * HDR(froze)
- * Magnetometer(no kernel drivers)
- * IR(no kernel drivers)
- * Bad audio quality(rom or kernel related)
- * YouTube 60fps videos
+
+	* HDR(froze)
+	* Magnetometer(no kernel drivers)
+	* IR(no kernel drivers)
+	* Bad audio quality(rom or kernel related)
+	* YouTube 60fps videos
  
 # Other repos
+
 [Vendor](https://github.com/HermesRepos/android_vendor_xiaomi_hermes/tree/cm-13.0)
 
 [Kernel](https://github.com/HermesRepos/android_kernel_xiaomi_hermes/tree/cm-13.0)
  
 # Thanks to:
  
- * nofearnohappy
- * Xen0n
- * andrea2107
- * Ibule 
- * Dinolek
- * And others...
+	* nofearnohappy
+	* Xen0n
+	* andrea2107
+	* Ibule 
+	* Dinolek
+	* And others...
