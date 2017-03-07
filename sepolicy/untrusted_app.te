@@ -50,6 +50,10 @@ allow untrusted_app proc_mtktz:file read;
 allow untrusted_app proc_mtktz:file open;
 allow untrusted_app proc_mtktz:file getattr;
 
+#3G VT vtservice
+allow untrusted_app vtservice:dir search;
+allow untrusted_app vtservice:file { read getattr open };
+
 # Date : WK15.39
 # Operation : Migration
 # Purpose : allow untrusted_app to find pq_service
