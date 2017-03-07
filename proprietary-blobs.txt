@@ -15,6 +15,7 @@ bin/slpd
 bin/source
 bin/spm_loader
 bin/superumount
+bin/vtservice
 bin/6620_launcher
 bin/6620_wmt_concurrency
 bin/6620_wmt_lpbk
@@ -175,6 +176,8 @@ lib/hw/mmsdk.mt6795.so
 lib/hw/sensors.mt6795.so
 lib/hw/consumerir.mt6795.so
 lib/hw/camera.default.so
+lib/libamrvt.so
+lib/libamr_wrap.so
 lib/libantradio.so
 lib/libawb_wrap.so
 lib/libbluetooth_mtk_pure.so
@@ -208,11 +211,17 @@ lib/libmtkcamera_client.so
 lib/libMtkOmxVdecEx.so
 lib/libmtksqlite3_android.so
 lib/libmtksqlite3_custom.so
+lib/libmtk_vt_service.so
+lib/libmtk_vt_swip.so
+lib/libmtk_vt_utils.so
 lib/libpqservice.so
 lib/libsink.so
 lib/libsource.so
 lib/libtinycompress.so
 lib/libvcodec_cap.so
+lib/libvt_avsync.so
+lib/libvt_custom.so
+lib/libvtmal.so
 lib/lib3a.so
 lib/lib3a_sample.so
 lib/libAGifEncoder.so
@@ -448,6 +457,8 @@ lib64/hw/camera.default.so
 lib64/hw/bluetooth.default.so
 lib64/drm/libdrmctaplugin.so
 lib64/drm/libdrmmtkplugin.so
+lib64/libamrvt.so
+lib64/libamr_wrap.so
 lib64/libaudioflinger.so
 lib64/libaudiomtkdcremoval.so
 lib64/libaudioresampler.so
@@ -492,6 +503,7 @@ lib64/libvoicerecognition_jni.so
 lib64/libvp8dec_sa.ca7.so
 lib64/libvp8enc_sa.ca7.so
 lib64/libvp9dec_sa.ca7.so
+lib64/libvt_custom.so
 lib64/libantradio.so
 lib64/libbluetooth_mtk_pure.so
 lib64/libBnMtkCodec.so
@@ -515,6 +527,9 @@ lib64/libmtkcamera_client.so
 lib64/libmtksqlite3_android.so
 lib64/libmtksqlite3_custom.so
 lib64/libMtkVideoSpeedEffect.so
+lib64/libmtk_vt_service.so
+lib64/libmtk_vt_swip.so
+lib64/libmtk_vt_utils.so
 lib64/libpqservice.so
 lib64/libsink.so
 lib64/libsource.so
@@ -522,6 +537,9 @@ lib64/libtimestretch.so
 lib64/libtinycompress.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_utility.so
+lib64/libvt_avsync.so
+lib64/libvtmal.so
+lib64/libvt_socketbind.so
 lib64/mtk-ril.so
 lib64/mtk-rilmd2.so
 lib64/lib3a.so
