@@ -124,6 +124,27 @@ allow radio ppl_agent_service:service_manager find;
 unix_socket_connect(radio, rild_vsim, mtkrild)
 unix_socket_connect(radio, rild_vsim_md2, mtkrild)
 
+# Date : 2015/04/11
+# Operation : VT development
+# Purpose : Add vtservice to support video telephony functionality 
+#           3G VT/ViLTE both use this service which will also communication with IMCB/Rild
+allow radio vtservice:binder call;
+allow radio vtservice:binder transfer;
+allow radio vtservice_service:service_manager find;
+allow vtservice self:capability dac_override;
+allow vtservice soc_vt_svc_socket:sock_file write;
+allow vtservice soc_vt_tcv_socket:sock_file write;
+allow vtservice rild_oem_socket:sock_file write;
+allow vtservice platform_app:binder call;
+allow vtservice system_server:binder call;
+allow vtservice fuse:dir write;
+allow vtservice fuse:dir add_name;
+allow vtservice fuse:dir create;
+allow vtservice fuse:file create;
+allow vtservice fuse:file getattr;
+allow vtservice surfaceflinger:fd use;
+allow vtservice tmpfs:lnk_file read;
+allow vtservice radio:binder call;
 
 # Date : WK15.34 2015/08/21
 # Operation : IT
